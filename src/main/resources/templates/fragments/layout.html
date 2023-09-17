@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head th:fragment="head">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" th:href="@{/styles/bootstrap.min.css}" type="text/css"/>
+    <link rel="stylesheet" th:href="@{/styles/style.css}" type="text/css">
+    <script th:src="@{/scripts/bootstrap.min.js}"></script>
+    <title>Shop Roku</title>
+</head>
+<body>
+<header th:fragment="header">
+    <nav class="navbar navbar-expand-md navbar-light bg-light border border-bottom">
+        <a class="navbar-brand mx-2 mt-1 home-button" th:href="@{/}">
+            <img class="d-inline-block align-top" th:src="@{/images/springLogo.svg}" alt="logo" width="35px" height="35px" />
+            Shop Roku
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation-content" aria-controls="navigation-content" aria-expanded="false" aria-label="Show navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ms-2" id="navigation-content">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/about}">O obchodu</a>
+                </li>
+                <li class="nav-item mr-auto">
+                    <a class="nav-link" href="#">Produkty</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+</body>
+</html>
